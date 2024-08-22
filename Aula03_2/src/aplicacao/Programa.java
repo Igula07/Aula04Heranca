@@ -16,8 +16,11 @@ public class Programa {
 		Scanner scn = new Scanner(System.in);
 
 		List<Conta> lista = new ArrayList<>();
-
-		System.out.println("Digite o tipo de conta" + "/nConta Corrente [1]" + "/nConta Poupanca [2]");
+		System.out.println("quantas contas deseja criar");
+		int quantidadedecontas = scn.nextInt();
+		
+		for (int i = 0; i<quantidadedecontas;i++) {
+		System.out.println("Digite o tipo de conta" + " Conta Corrente [1]" + " Conta Poupanca [2]");
 		int tipo = scn.nextInt();
 
 		if (tipo == 1) {
@@ -67,9 +70,9 @@ public class Programa {
 				System.out.println("Desgraça2");
 
 			}
-
-		}System.out.println(lista);
-
+			
+			}System.out.println(lista);
+		}
 	} 
 
 }
